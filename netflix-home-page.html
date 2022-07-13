@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Netflix</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/81ea498f91.js" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/netflix-home-page.css">
     <script src="/js/netflix-home-page.js"></script>
 </head>
@@ -71,24 +73,63 @@
 
             <!-- NETFLIX BUTTONS WITH SVG's (removed classes and attributes) -->
             <div class="hero-btns-container">
+                <span class="coming-soon-watermark">COMING SOON</span>
                 <!-- Play Button -->
-            <button type="submit" class="hero-image-play-btn hero-btn"><svg width="24" height="24">
+            <!-- <button type="submit" class="hero-image-play-btn hero-btn"><svg width="24" height="24">
                     <path
                         d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
                         fill="currentColor"></path>
-                </svg><span class="hero-image-btn-text">Play</span></button>
+                </svg><span class="hero-image-btn-text">Play</span></button> -->
                 <!-- More Info Button -->
-            <button type="submit" class="hero-image-info-btn hero-btn"><svg width="24" height="24">
+            <!-- <button type="submit" class="hero-image-info-btn hero-btn"><svg width="24" height="24">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
                         fill="currentColor"></path>
-                </svg><span class="hero-image-btn-text">More Info</span></button>
+                </svg><span class="hero-image-btn-text">More Info</span></button> -->
             </div>
         </section>
+
+        <!-- Movie Slider -->
+        
+    <section class="movie-slider-wrapper">
+        <h1 class="my-list-heading">My List</h1>
+        <div class="movie-slider-container">
+            <button class="slider-handles handle-prev">
+                <div class="handle-prev-icon"><i class="fa-solid fa-chevron-left"></i></div>
+            </button>
+            <div class="movie-slider">
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeQ2lk5vyoX1gUlXNwE7rH4pGWh1OtR-haIHv4wQ-u13Misc4AyCVkjyu75t0XdGTaGhxq5iZgXVlaqYrNnw3uKaksW07r94MAwAR2lyUBwdGxPXwDkT_rMY9KYA0W1Jk0jtuCyPIFXeEu1anXGSw59xANba2TKpTWE.jpg?r=602" alt="">
+            
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVIROzcqdItj5G9tBvl7dEXkUHGYaKBTLREXzIXnZtTu61dvtMyQkwtbLHvmZ3krX8El84GfXZmIRIg5ybGIk4ydFbmEMYPNstvhsO0Nr4GX6i73RSZ6YpyFz85GWztIqNFkSBs8ozAFgG-7REV0ufj2ebVxYCH9k6oc5fx1p3CPYLzVl6CPrvkc0OK1mY7bc4pR.jpg?r=8ba" alt="">
+           
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYzuBN13d-AEr2ErlKQygn1XCWhalBpWW7DFTXwufS1rbaiqcwZOBQMQ86J8YOGb1JiNoBAYBq9Tcce1c0m_57XSGACsoP2Y2XNvXHbr6Sx9_GLhgH7_UdFe-wW070q8kcuWCB-4Vb9hwKHkCK8ZbNY-j-oSYEWttUMSZ_S3GzQcQzeaK8jwIIoAaErV1Vx0NPgh.jpg?r=87e" alt="">
+            
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbg2X9OnoZpNQHEZDQaQLRCdzvM1cuhy2a2FyiCJfp3Q_dcmHjqpG37rOUoLn3DvZ0KmA7mAyaMQCKotn6TLwYxAn-njKYPFaAKtzVJ3ewVl2OwULk8Pje4fmn4Ty2q09OT045TraKrmgw7Mr4kWYcmiM7wC71p132Vd7sgYl0eZfdmbWj0jnhD57aEH2uwsLYVLKXoxfZtcE34bouxwxWkCYmM8Nni-.jpg?r=07c" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABapf4sMxWAFKjSdpJ8SdCVxHOz5IbPTqpOeK-5DXQUHzWxh54dqr5OVSkMFSR7z5b_vFVl3eXpGgKgDSRdR_35tPw2YL-JOtRJz1-Y9pC9V1AiyftmFnEcW1PAqMwc7Mw_lR.jpg?r=6db" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABepImuVeAbB-2OS9z4N_twdJuQJDZsmPJCexriArdIexrMw72WzF8nPEHj--38DJZ6j4q_wDmtPPitZLsGwNHovQwMWWbXRc9RA.jpg?r=425" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXYDVLRSk4BcB4OLG79HPC1CvCBMC_voQnycPJeYjIZnoXsxtJRDk3S3VH1tDJhtcKYwuyc9Hunz_5P15IAJfFn3Cqdwt_6ER3E.jpg?r=69f" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXJPS7-_hglizkr4cnA8Cu4hvF548cm8Jxr_rrPnKr0UYFjgPWE3sIcRGo2oIfcsa8kmHKi1TNY7pFK5UDkahBRy4fJSqaEMl6jVLs2xoiVqWocloJAkFeGeucYBN8aRflzWpgxq-A.jpg?r=460" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZfLMIaq3bipZe5d17IyLZ8qwQ78xgg3MuAIvDNSm2ndWj54Ho-6iUX175_MW-VrcSDGxtnpPQLmcCeLc2fhkUx4D_8uKgZ9JUXD4g3T_dDJDE-N9RQKahlBL2qxC8zNmQJE.jpg?r=ef3" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZg50S25g0OT8aPkNFc9AhRTP5Sw4KlHxavfsZuaihLV_1HorGinhZ6UncJLq2WXDRAhNZ1wrHes7EquI2EK6U-UHd1qkOO9r0oRs0p5_jJ1ret2EyLgaq8nVI92RZ76QUpoSVhIWNlo9F2kcsUyWK54hFf1K-0ONsM.jpg?r=044" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRq9BeDgg3rr9r8BdqEITzau5wqoS9mdGqXdmQBqIovv0_BQjsP5SQP3GaL6HICugU3UIjd2rzZO3ZTPwvSdGU-K5ZLSm60_gn7FVQADK85mSMCxaR6sjfzb1lu0wSmo0xdy.jpg?r=a37" alt="">
+
+            <img class="slider-item movie-thumbnail-placeholder" src="https://occ-0-6161-32.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdvhaK3Zv1B4kxZrbCS4RPKqeZcv06rch2vCn_8H9D2j_kKoZQi6hiIrEZf4gfcgQYWm2vV5XstsmDQSxSfHl9yRdt2gQVOi31p5Ro4lwW49Y9s62Cf-gPwUuf_IC0wr8YRO.jpg?r=b4e" alt="">
+
+            <!-- <img src="#" class="slider-item movie-thumbnail-placeholder"> -->
+        </div>
+        <button class="slider-handles handle-next">
+            <div class="handle-next-icon"><i class="fa-solid fa-chevron-right"></i></div>
+        </button>
+        </div>
+    </section>
     </div> <!-- End of app-wrapper -->
-    <!-- Movie Slider -->
-
-
 </body>
 
 </html>
